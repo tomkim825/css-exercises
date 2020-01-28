@@ -1,0 +1,106 @@
+<head>
+    <style>
+        .container{
+          height: 10vw;
+          width: 10vw;
+          border-radius:50%;;
+          position: absolute;
+          top: 40%;
+          left: 45%;
+        }
+        .busy{
+            background: #222; 
+            transform: rotate(30deg);
+            /* animation: 1.5s blinky alternate infinite ease-in-out -0.75s; */
+        }
+        .busy2{
+            background: transparent;
+            transform: rotate(0deg);
+            text-align: center; 
+        }
+        .busy3{
+            background: transparent;
+            transform: rotate(60deg);
+        }
+        .spinner{
+            height: 1vw;
+            width: 1vw;
+            border-radius: 50%;
+            position: absolute;
+            background: #999;
+            z-index: 1;
+        }
+            .spinner1{
+                top:0;
+                left:48%;
+                background-color: red;
+                animation: 3s spin infinite ease-in-out;
+            }
+            .spinner2{ 
+                top:45%;
+                left:40%;
+                background-color: green;
+                animation: 3s spin3 infinite ease-in-out -0.75s;
+            }
+            .spinner3{
+                top:0;
+                left:48%;
+                background-color: purple;
+                animation: 3s spin infinite ease-in-out -0.25s;
+            }
+            .spinner4{ 
+                top:45%;
+                left:40%;
+                background-color: yellow;
+                animation: 3s spin3 infinite ease-in-out -1s;
+            }
+            .spinner5{
+                top:0;
+                left:48%;
+                background-color: orange;
+                animation: 3s spin infinite ease-in-out -2.75s;
+            }
+            .spinner6{ 
+                top:45%;
+                left:40%;
+                background-color: blue;
+                animation: 3s spin3 infinite ease-in-out -0.5s;
+            }            
+        @keyframes spin {
+            0% {top: 0%}
+            50%{top: 90%}
+            100%{top: 0%}
+        }                       
+        @keyframes spin3 {
+            0% {left:0%}
+            50%{left:90%}
+            100%{left:0%}
+        }      
+        span{
+          position: relative;
+          top: 45%;
+          margin: 0 auto;
+          color: white; 
+          /* animation: 1.5s blinky alternate infinite ease-in-out; */
+        }
+        /* @keyframes blinky {
+            0% {opacity: 0.5}
+            100%{opacity: 1}
+        }  */
+    </style>
+</head>
+<body>
+    <div class="container busy">
+        <div class="spinner1 spinner" ></div>
+        <div class="spinner2 spinner" ></div>
+    </div> 
+    <div class="container busy2">
+      <!-- <span>please wait</span>  -->
+      <div class="spinner3 spinner" ></div>
+      <div class="spinner4 spinner" ></div>
+  </div>  
+    <div class="container busy3">
+      <div class="spinner5 spinner" ></div>
+      <div class="spinner6 spinner" ></div>
+  </div> 
+</body>
