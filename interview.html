@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+      /* Root Styles */
+      body {
+        height: 100vh;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+      }
+      img {
+        display: block;
+      }
+      body div #my-title {
+        font-family: serif;
+      }
+      #identified{
+        background-color: green;
+      }
+      h1{
+        color:red;
+        font-family: sans-serif;
+      }
+      h1 span{
+        color:blue;
+      }
+      li {
+        display: inline-block
+      }
+      li:first-of-type{
+        color:purple
+      }
+      @media screen and (max-width:799px){
+        li {
+          display: block;
+        }
+      }
+      [id*='my-']{
+        background-color: salmon;
+      }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="http://images.menswearhouse.com/is/content/TMW/TEST/Code%20Interview%20Css/s7-interview-styles.css">
+    <title>Thomas Kim - Tailored Brands FEWD Interview</title>
+    <meta name="description" content="Used to test Frontend Web Developers when applying to Tailored Brands">
+  </head>
+  <body>
+    <div>
+      <img id='my-logo' src='https://adc3ef35f321fe6e725a-fb8aac3b3bf42afe824f73b606f0aa4c.ssl.cf1.rackcdn.com/tenantlogos/3873.png' alt="Men's Wearhouse Logo" />
+      <h1 id="my-title">
+        <span>Hello</span> World!
+      </h1>
+      <div id="my-list">
+        <ol>
+          <li>
+            <span>First</span>
+          </li>
+          <li special>
+            <span>Second</span>
+          </li>
+          <li>
+            <span>Third</span>
+          </li>
+          <li id="identified">
+            <span>Forth</span>
+          </li>
+          <li special>
+            <span>Fifth</span>
+          </li>
+          <li>
+            <span>Sixth</span>
+          </li>
+        </ol>
+        <a href="https://www.menswearhouse.com/"> link to mw.com</a>
+        <br/>
+        <video width="240" height="240" controls>
+          <source src="11_FINAL/20-2102699_JAB_JEANS_EDTRL_EM_0220_FINAL.pdf" type="video/ogg">
+          <source src="11_FINAL/20-2102699_JAB_JEANS_EDTRL_EM_0220_FINAL.pdf" type="video/mp4">
+        </video>
+        <picture>
+          <source media="(min-width:1000px)" srcset="1_OVo5mxqgkAs8x8rZloCD8A.png">
+            <source media="(min-width:700px)" srcset="20190715_SuperTuesday_Animation.gif">
+              <img src="20190929_ravens_coupon_barcode.png">
+        </picture>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      const simpleObject = {
+        "shoe": "black",
+        "shirt": "blue",
+        "pants": "gray",
+        "jacket": "pink"
+      }
+
+      const nestedObject = {
+        "resonance": {
+          "schemes": [
+            {
+              "scheme": "minicart",
+              "explanation": "Best Sellers",
+              "display": "yes",
+              "items": [
+                {
+                  "Model": "TBI_5000_5355_31C4_05",
+                  "OfferName": "Joseph Abboud White Twill Dress Shirt"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
+  </body>
+</html>

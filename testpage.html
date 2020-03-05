@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Thomas Kim</title>
+</head>
+
+<style>
+  img{
+    object-fit: cover;
+  }
+  body{
+    padding:0;
+    margin: 0;
+    /* background-color: black; */
+  }
+  header{
+    background-color: #efefef !important; 
+    /* width: 100%; */
+    /* height: 40px; */
+    overflow: hidden;
+  }
+  #main-container{
+    /* color: white; */
+    /* background-color: black; */
+    max-height: calc(100vh - 3em);
+    overflow: hidden;
+    text-align: center;
+  }
+  footer{
+    background-color:#999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align:center;
+    padding: 10px 0;
+    height: 2em;
+  }
+  #logo{
+    background-color: dodgerblue;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    float: left;
+  }
+  nav{
+    float: right;
+    margin: 15px 20px 0 0 ;    
+  }
+  nav a{
+    padding: 20px 5px;
+  }
+  .main-section{
+    clear: both;
+  }
+
+  @media screen and (max-width: 640px){
+    #logo{
+      width: 100%;
+      /* text-align: center; */
+      font-size: 2em;
+    }
+    nav{
+      clear: both;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+    nav a {
+      display: block;
+      padding: 10px 40px;
+      text-align: left;
+    }
+  }
+</style>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+      <a href="index.html" id="logo">Thomas Kim</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>test page</h1>
+      <img src="https://avatars1.githubusercontent.com/u/35576719?s=200&v=4" width="300px" height="160px" id="main-img" class="auth-image" alt="Thomas Kim Picture">
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; BlueShield of California 2020
+    </div>
+  </footer>
+</body>
+
+<script>
+  let imgSrc = {
+    "src1":"https://tse3.mm.bing.net/th/id/OIP.EefJ8d_sFh_fnLUMo9gU4wAAAA?w=225&h=123&c=7&o=5&dpr=2&pid=1.7",
+    "src2":"https://avatars1.githubusercontent.com/u/35576719?s=200&v=4"
+  }
+
+  document.querySelector('#main-img').addEventListener('click', function() {
+    this.src !== imgSrc.src1 ? this.src = imgSrc.src1 : this.src = imgSrc.src2  
+  })
+</script>
+
+</html>
